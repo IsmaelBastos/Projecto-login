@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+<main>
+
+    <section>
+
+        <div id="imagem">
+        </div>
+
+        <div id="formulario">
+
+            <h1>Login</h1>
+
+            <p>Seja bem-vindo(a) novamente. Digite as sua credencias para poder
+            acessar a sua conta e cofigurar o  seu ambiente.</p>
+
+           <form action="php/login.php" method="post" autocomplete="on">
+
+            <div class="dados">
+
+                <img src="imagens/person_32px.png" alt="usuario" width="25">
+
+                <input type="email" name="email" id="iemail" autocomplete="email"
+                 required autofocus placeholder="Digite o seu e-mail">
+
+                <label for="iemail">Login</label>
+
+            </div>
+
+            <div class="dados">
+
+                <img src="imagens/key_32px.png" alt="senha" width="23">
+
+                <input type="password" name="senha" id="isenha"
+                autocomplete="current-password" required autofocus
+                placeholder="Digite a sua senha" minlength="8" maxlength="16">
+
+                <label for="isenha">Senha</label>
+
+            </div>
+
+            <input type="submit" value="Entrar">
+
+            <a href="#" class="button">Esqueci a senha <img src="imagens/mail_32px.png" alt="foto de uma carta" width="25"></a>
+           </form>
+
+        </div>
+    </section>
+</main>
+</body>
+</html>
